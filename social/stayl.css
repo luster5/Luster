@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins','sans-serif';
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    position: relative;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.logo{
+    text-decoration: none;
+    color:red;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10%;
+}
+.left-side{
+    width: 20%;
+    height: 100%;
+    position:absolute;
+    left: 0;
+    top: 0;
+    
+}
+.row{
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5%;
+}
+.left-col
+{
+    flex-basis: 30%;
+}
+.right-col
+{
+    flex-basis: 45%;
+}
+.left-col img {
+    width: 25%;
+    cursor: pointer;
+    filter: grayscale(0);
+    transition: filter 1s;
+}
+.right-col h1 {
+font-size: 55px;
+font-weight: 600;
+text-align: center;
+}
+.right-col p {
+    text-align: center;
+    color: #777;
+    margin: 20px 0 70px;
+}
+.social-media
+{
+    display: flex;
+    margin-top: 30px;
+    
+}
+.icon
+{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    position: relative;
+    margin-left: 45%;
+
+    overflow: hidden;
+}
+
+.icon img {
+    width: 28px;
+}
+.icon a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff1616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.icon a :hover{
+    opacity: 1;
+}
+
+.icon :hover {
+    transform: translateY(-5px);
+}
